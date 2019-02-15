@@ -23,7 +23,6 @@ function Header() {
             }
           `}
         </style>
-        <div className="wrapper">
           <div className="links">
             <Link to="/" style={{ textDecoration: "none", color: "white" }}>
               Home
@@ -47,7 +46,6 @@ function Header() {
               Social
             </Link>
           </div>
-        </div>
       </div>
     );
 }

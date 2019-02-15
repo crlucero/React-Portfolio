@@ -54,6 +54,13 @@ module.exports = {
               "styled-jsx/babel"
           ]
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" }
+        ]
       }
     ]
   },
