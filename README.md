@@ -4,6 +4,9 @@
 
 This is my new and updated portfolio using React.
 
+## Projection
+I still need to design the pages for projects, social and about. I will also add more dynamic elements"
+
 ## Setup/Installation Requirements to run program
 
 - Clone from Github
