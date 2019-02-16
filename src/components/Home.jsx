@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import ReactPic from '../assets/images/react.png'
+import JavaScript from '../assets/images/javascript.png'
+import CSharp from '../assets/images/cshrp.png'
+import HTML from '../assets/images/HTML_Logo.png'
+import CSS from '../assets/images/css.png'
 
-// TODO: Implement icon images to contact 
 
 
 function Home() {
@@ -16,14 +20,13 @@ function Home() {
             flex-direction: column;
             align-items: center;
             margin: -9px;
-            height: 570px;
+            height: 600px;
             font-family: "Oswald", sans-serif;
             letter-spacing: 2px;
             background: linear-gradient(to right, #283048, #859398);
           }
           .content {
-            margin-top: 80px;
-            margin-bottom: auto;
+            margin-top: 50px;
             border: solid;
             background-color: #494343;
             border-radius: 8px;
@@ -41,13 +44,13 @@ function Home() {
             margin-bottom: 20px;
             font-size: 20px;
           }
-          .social-links {
+          .tools {
               display: flex;
               justify-content: space-between;
-              border: solid;
-              border-radius: 20px;
+              border-top: solid;
               width: 50%;
               margin: auto;
+              padding-top: 25px;
           }
         `}
       </style>
@@ -62,14 +65,26 @@ function Home() {
           <p><Link to="projects" style={{ textDecoration: "none", color: "black" }}>Click here</Link>if you don't want to get to know me, and just want to see some of my work.</p>
           <p>You could also just<Link to="social" style={{ textDecoration: "none", color: "black" }}> click here </Link>if you wish to check out my social sites.</p>
         </div>
-        <div className='social-links'>
-        {/* LinkedIn */}
+        <div className='tools'>
+        {/* React */}
             <div> 
-                {/* <img src={linkedin}/> */}
+                <img src={ReactPic}/>
             </div>
-        {/* Github */}
+        {/* CSS */}
+            <div> 
+                <img src={CSS}/>
+            </div>
+        {/* JavaScript */}
             <div>
-                {/* <img src={github}/> */}
+                <img src={JavaScript}/>
+            </div>
+        {/* HTML */}
+            <div>
+                <img src={HTML}/>
+            </div>
+        {/* CSharp */}
+            <div>
+                <img src={CSharp}/>
             </div>
         </div>
       </div>
