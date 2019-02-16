@@ -51,6 +51,7 @@ function Home() {
               margin: auto;
               padding-top: 25px;
           }
+
         `}
       </style>
       <div className='body'>
@@ -61,7 +62,7 @@ function Home() {
           <p>
             If you would like to get to know a little about me,
             <Link to='/about' style={{ textDecoration: 'none', color: 'skyblue' }}> click here</Link>.</p>
-          <p><Link to='portfolio' style={{ textDecoration: 'none', color: 'orange' }}>Click here</Link> if you don't want to get to know me, and just want to see some of my work.</p>
+          <p><Link to='portfolio' style={{ textDecoration: 'highlight', color: 'orange' }}>Click here</Link> if you don't want to get to know me, and just want to see some of my work.</p>
           <p>You could also just<Link to='social' style={{ textDecoration: 'none', color: 'green' }}> click here </Link>if you wish to check out my social sites.</p>
         </div>
         <div className='tools'>
