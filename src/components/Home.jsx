@@ -27,7 +27,6 @@ function Home() {
           }
           .content {
             margin-top: 50px;
-            border: solid;
             background-color: #494343;
             border-radius: 8px;
             width: 66%;
@@ -62,7 +61,7 @@ function Home() {
           <p>
             If you would like to get to know a little about me,{" "}
             <Link to="/about" style={{ textDecoration: "none", color: "black" }}>click here</Link>.</p>
-          <p><Link to="projects" style={{ textDecoration: "none", color: "black" }}>Click here</Link>if you don't want to get to know me, and just want to see some of my work.</p>
+          <p><Link to="portfolio" style={{ textDecoration: "none", color: "black" }}>Click here</Link>if you don't want to get to know me, and just want to see some of my work.</p>
           <p>You could also just<Link to="social" style={{ textDecoration: "none", color: "black" }}> click here </Link>if you wish to check out my social sites.</p>
         </div>
         <div className='tools'>

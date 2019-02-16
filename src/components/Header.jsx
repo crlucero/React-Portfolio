@@ -24,27 +24,10 @@ function Header() {
           `}
         </style>
         <div className="links">
-          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-            Home
-          </Link>
-          <Link
-            to="/about"
-            style={{ textDecoration: "none", color: "white" }}
-          >
-            About
-          </Link>
-          <Link
-            to="projects"
-            style={{ textDecoration: "none", color: "white" }}
-          >
-            Projects
-          </Link>
-          <Link
-            to="social"
-            style={{ textDecoration: "none", color: "white" }}
-          >
-            Social
-          </Link>
+          <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>Home</Link>
+          <Link to='/about' style={{ textDecoration: 'none', color: 'white' }}>About</Link>
+          <Link to='portfolio' style={{ textDecoration: 'none', color: 'white' }}>Portfolio</Link>
+          <Link to='social' style={{ textDecoration: 'none', color: 'white' }}>Social</Link>
         </div>
       </div>
     );
