@@ -47,7 +47,6 @@ function About() {
           <div className='rightCol'>
             <p>I am a passionate web developer who has been in the field for about a year. Although fairly new, I love to design and create programs that are visually appealing. 
             </p>
-
             <p>My focus is building applications to the exact needs of a client. I strive to make their ideas come to life. 
             </p>
           </div>
