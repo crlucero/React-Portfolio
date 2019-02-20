@@ -4,6 +4,9 @@
 
 This is my new and updated portfolio using React.
 
+## Structure
+![Alt text](src/assets/images/structure.png?raw=true "Title")
+
 ## Projection
 I still need to design the pages for projects, social and about. I will also add more dynamic elements"
 
