@@ -30,18 +30,11 @@ class App extends React.Component {
       <div>
         <Header />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/portfolio" render={() => <PortfolioList portfolioList={this.state.projectList} />} />
-          <Route path="/social" component={Social} />
-          <Route
-            path="/admin"
-            render={() => (
-              <NewProjectControl
-                onNewProjCreation={this.handleAddingNewProjToList}
-              />
-            )}
-          />
+          <Route exact path='/' component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/portfolio'  render={() => <PortfolioList portfolioList={this.state.projectList} />} />
+          <Route path='/social' component={Social} />
+          <Route path='/admin' render={() => ( <NewProjectControl onNewProjCreation={this.handleAddingNewProjToList}/>)}/>
         </Switch>
       </div>
     );

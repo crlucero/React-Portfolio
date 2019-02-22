@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function Portfolio(props) {
   return (
@@ -53,16 +53,16 @@ function Portfolio(props) {
           }
         `}
       </style>
-      <div className="body">
+      <div className='body'>
         <div>
-          <div className="title">
+          <div className='title'>
             <h3> {props.name} </h3>
           </div>
             <h5> {props.description} </h5>
             <p> GitHub Link: {props.link} </p>
             <div className='link'>
                 <p>
-                    <a href="https://epichat-d3162.firebaseapp.com/">
+                    <a href='https://epichat-d3162.firebaseapp.com/'>
                         {props.liveLink}
                     </a>
                 </p>
