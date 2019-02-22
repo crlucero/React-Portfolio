@@ -14,8 +14,8 @@ function Header() {
               text-align: center;
               padding-left: 20%;
               padding-right: 20%;
-              padding-top: 1%;
-              padding-bottom: 1%;
+              padding-top: 2%;
+              padding-bottom: 2%;
               margin: -8px;
               font-family: "Oswald", sans-serif;
               letter-spacing: 2px;

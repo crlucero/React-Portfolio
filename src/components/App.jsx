@@ -3,6 +3,8 @@ import { Switch, Route } from 'react-router-dom'
 import Header from './Header'
 import Home from './Home'
 import About from './About'
+import PortfolioList from './PortfolioList'
+import Social from './Social'
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path='/about' component={About} />
+        <Route path='/portfolio' component={PortfolioList} />
+        <Route path='/social' component={Social} />
       </Switch>
     </div>
   );
