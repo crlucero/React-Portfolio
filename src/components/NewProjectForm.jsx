@@ -8,7 +8,7 @@ function NewProjectForm(props){
     let _link = null;
     let _liveLink = null;
 
-    function handleNewProject(event) {
+    function handleNewProjectSubmit(event) {
         event.preventDefault();
         props.onNewProjCreation({ name: _name.value, description: _description.value, link: _link.value, liveLink: _liveLink.value, id: v4() })
         _name.value ='';
@@ -19,7 +19,7 @@ function NewProjectForm(props){
 
     return (
         <div>
-            <form onSubmit={handleNewProject}>
+            <form onSubmit={handleNewProjectSubmit}>
                 <input 
                     type='text'
                     id='name'
@@ -44,7 +44,7 @@ function NewProjectForm(props){
                     placeholder='Live Link to Project'
                     ref={(input) => { _liveLink = input; }}
                     />
-                <button type='submit' > Add Project </button>
+                <button type='submit'> Add Project </button>
             </form>
         </div>
     )

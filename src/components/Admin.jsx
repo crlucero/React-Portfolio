@@ -1,13 +1,13 @@
 import React from 'react'
-import NewProjectForm from './NewProjectForm';
+import NewProjectControl from './NewProjectControl';
 import PortfolioList from './PortfolioList';
 
 function Admin(props) {
     return (
       <div>
         <h1>Admin</h1>
-            <NewProjectForm />
-        <PortfolioList projectList={props.projectList} />
+            <NewProjectControl />
+            <PortfolioList />
       </div>
     );
 }

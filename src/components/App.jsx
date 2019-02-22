@@ -6,21 +6,46 @@ import About from './About'
 import PortfolioList from './PortfolioList'
 import Social from './Social'
 import Admin from './Admin'
+import NewProjectControl from './NewProjectControl';
 
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path='/about' component={About} />
-        <Route path='/portfolio' component={PortfolioList} />
-        <Route path='/social' component={Social} />
-        <Route path='/admin' component={Admin} />
-      </Switch>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      projectList: []
+    };
+    this.handleAddingNewProjToList = this.handleAddingNewProjToList.bind(this);
+  }
+
+  handleAddingNewProjToList(newProj) {
+    var newProjectList = this.state.projectList.slice();
+    newProjectList.push(newProj);
+    this.setState({projectList: newProjectList});
+  }
+
+  render() {
+    return (
+      <div>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/portfolio" render={() => <PortfolioList portfolioList={this.state.projectList} />} />
+          <Route path="/social" component={Social} />
+          <Route
+            path="/admin"
+            render={() => (
+              <NewProjectControl
+                onNewProjCreation={this.handleAddingNewProjToList}
+              />
+            )}
+          />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App

@@ -1,8 +1,9 @@
 import React from 'react';
 import Portfolio from './Portfolio';
-import { v4 } from 'uuid';
+import PropTypes from 'prop-types';
+// import NewProjectControl from './NewProjectControl';
 
-function PortfolioList() {
+function PortfolioList(props) {
   return (
     <div>
       <style jsx>
@@ -34,7 +35,7 @@ function PortfolioList() {
       </style>
       <div className="body">
         <div className="flex-container">
-          {projectList.map((project, index) => (
+          {props.portfolioList.map((project, index) => (
             <div className="flex-item">
               <Portfolio
                 name={project.name}
@@ -68,14 +69,18 @@ const projectList = [
     name: "Hair Salon Simulation",
     description:
       "A hair salon application from the perspective of a management position. Users can add clients to stylists, stylists to specialties, and specialties to stylists. Built with C#, ASP.Net, MySQL.",
-      link: <em>https://github.com/crlucero/Angular-SiteRebuild</em>
+    link: <em>https://github.com/crlucero/Angular-SiteRebuild</em>
   },
   {
     name: "Chat App",
     description:
       "A project I created with some peers. It allows users to login, and enter a chatroom where they can chat with whoever is in the chatroom. Authentication and hosting are dependant on Firebase. The program is written in Angular, JavaScript/TypeScript.",
-      link: <em>https://github.com/crlucero/Angular-SiteRebuild</em>,
+    link: <em>https://github.com/crlucero/Angular-SiteRebuild</em>,
     liveLink: "Live Link: 'https://epichat-d3162.firebaseapp.com/'"
   }
 ];
+
+PortfolioList.propTypes = {
+  portfolioList: PropTypes.array
+};
 export default PortfolioList;
