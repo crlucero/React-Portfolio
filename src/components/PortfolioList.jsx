@@ -54,27 +54,27 @@ const projectList = [
   {
     name: "Doctor Search",
     description:
-      "A website where user can search for a doctor in greater Seattle area, by name or specialty, using API from BetterDoctor. Uses Javascript, Bootstrap, JQuery.",
-    link: "https://github.com/crlucero/JS-DoctorAPI"
+      "A website where user can search for a doctor in greater Seattle area, by name or specialty, using API from BetterDoctor. Built with Javascript, Bootstrap, JQuery.",
+    link: <em>https://github.com/crlucero/JS-DoctorAPI</em>
   },
   {
     name: "Angular Site Rebuild",
     description:
       "A remake of the NextOnTop Website using Angular and Javascript. I added my own twist to the site so that users can upload blog posts if they wish to.",
-      link: "https://github.com/crlucero/Angular-SiteRebuild"
+    link: <em>https://github.com/crlucero/Angular-SiteRebuild</em>
   },
   {
     name: "Hair Salon Simulation",
     description:
-      "A hair salon application from the perspective of a management position. Users can add clients to stylists, stylists to specialties, and specialties to stylists. Uses C#, MySQL.",
-      link: "https://github.com/crlucero/Angular-SiteRebuild"
+      "A hair salon application from the perspective of a management position. Users can add clients to stylists, stylists to specialties, and specialties to stylists. Built with C#, ASP.Net, MySQL.",
+      link: <em>https://github.com/crlucero/Angular-SiteRebuild</em>
   },
   {
     name: "Chat App",
     description:
-      "A project I created with some peers. It allows users to login, and enter a chatroom where they can chat with whoever is in the chatroom. Authentication and hosting are dependant on Firebase. The program is written in Angular, JavaScript, TypeScript.",
-      link: "https://github.com/crlucero/Angular-SiteRebuild",
-      liveLink: "Live Link: 'https://epichat-d3162.firebaseapp.com/'"
-  },
+      "A project I created with some peers. It allows users to login, and enter a chatroom where they can chat with whoever is in the chatroom. Authentication and hosting are dependant on Firebase. The program is written in Angular, JavaScript/TypeScript.",
+      link: <em>https://github.com/crlucero/Angular-SiteRebuild</em>,
+    liveLink: "Live Link: 'https://epichat-d3162.firebaseapp.com/'"
+  }
 ];
 export default PortfolioList;

@@ -38,11 +38,15 @@ function Portfolio(props) {
           h3, h5 {
             color: white;
           }
+          h5 {
+              font-size: 16px;
+          }
           p {
             text-align: center;
-            font-size: 12px;
+            font-size: 14px;
             padding-bottom: 10px;
             color: white;
+            font-weight: light;
           }
           .link {
               font-style: italic;
