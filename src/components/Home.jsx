@@ -5,6 +5,7 @@ import JavaScript from '../assets/images/javascript.png'
 import CSharp from '../assets/images/cshrp.png'
 import HTML from '../assets/images/HTML_Logo.png'
 import CSS from '../assets/images/css.png'
+import Me from '../assets/images/me.png'
 
 
 
@@ -20,20 +21,19 @@ function Home() {
             flex-direction: column;
             align-items: center;
             margin: -9px;
-            height: 600px;
+            height: 110vh;
             font-family: "Oswald", sans-serif;
             letter-spacing: 2px;
             background: linear-gradient(to right, #283048, #859398);
           }
           .content {
-            margin-top: 50px;
             background-color: #494343;
             border-radius: 8px;
             width: 66%;
           }
           h1 {
             text-align: center;
-            padding-top: 10px;
+            padding-top: 1px;
             font-size: 36px;
             color: white;
           }
@@ -51,11 +51,18 @@ function Home() {
               margin: auto;
               padding-top: 25px;
           }
+          .avatar {
+              margin-top: 10px;
+              margin-left: 37%;
+          }
 
         `}
       </style>
       <div className='body'>
         <div className='content'>
+          <div className='avatar'>
+            <img src={Me} />
+          </div>
           <h1>Hello, I'm Cristian Lucero.</h1>
           <hr />
           <p>I am a front-end web developer.</p>

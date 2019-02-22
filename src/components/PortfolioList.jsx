@@ -3,7 +3,6 @@ import Portfolio from './Portfolio';
 import PropTypes from 'prop-types';
 import TopProjects from './TopProjects';
 
-// TODO: Get original, hardcoded project list to show on portfolio comp
 function PortfolioList(props) {
   return (
     <div>
