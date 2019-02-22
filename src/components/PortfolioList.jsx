@@ -1,5 +1,6 @@
-import React from "react";
-import Portfolio from "./Portfolio";
+import React from 'react';
+import Portfolio from './Portfolio';
+import { v4 } from 'uuid';
 
 function PortfolioList() {
   return (
@@ -40,7 +41,7 @@ function PortfolioList() {
                 description={project.description}
                 link={project.link}
                 liveLink={project.liveLink}
-                key={index}
+                key={project.id}
               />
             </div>
           ))}
