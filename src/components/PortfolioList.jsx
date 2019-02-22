@@ -2,7 +2,7 @@ import React from 'react';
 import Portfolio from './Portfolio';
 import PropTypes from 'prop-types';
 // import NewProjectControl from './NewProjectControl';
-
+// TODO: Get original, hardcoded project list to show on portfolio comp
 function PortfolioList(props) {
   return (
     <div>
