@@ -21,7 +21,7 @@ function Home() {
             flex-direction: column;
             align-items: center;
             margin: -9px;
-            height: 110vh;
+            height: 125vh;
             font-family: "Oswald", sans-serif;
             letter-spacing: 2px;
             background: linear-gradient(to right, #283048, #859398);
@@ -49,7 +49,7 @@ function Home() {
               border-top: solid;
               width: 50%;
               margin: auto;
-              padding-top: 25px;
+              padding-top: 35px;
           }
           .avatar {
               margin-top: 10px;
